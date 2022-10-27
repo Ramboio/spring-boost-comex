@@ -1,15 +1,15 @@
 package br.com.alura.comex.model;
 
 public class ItensPedidoForm {
-    private Long idPedido;
+    private Long idProduto;
     private int quantidade;
 
-    public Long getIdPedido() {
-        return idPedido;
+    public Long getIdProduto() {
+        return idProduto;
     }
 
-    public void setIdPedido(Long idPedido) {
-        this.idPedido = idPedido;
+    public void setIdProduto(Long idProduto) {
+        this.idProduto = idProduto;
     }
 
     public int getQuantidade() {

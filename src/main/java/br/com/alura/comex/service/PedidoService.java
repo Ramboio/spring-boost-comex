@@ -27,7 +27,7 @@ public class PedidoService {
         Cliente cliente = clienteService.getById(pedidoForm.getIdCliente()).orElseThrow(RuntimeException::new);
 
         for (ItensPedidoForm itemPedidoForm : pedidoForm.getItensPedidoForm()) {
-            Produto produto = produtoService.getById(itemPedidoForm.getIdPedido()).orElseThrow(RuntimeException::new);
+            Produto produto = produtoService.getById(itemPedidoForm.getIdProduto()).orElseThrow(RuntimeException::new);
 
             ItemDePedido itemDePedido = new ItemDePedido(itemPedidoForm.getQuantidade(), produto);
             if (itemPedidoForm.getQuantidade() > 10) {
